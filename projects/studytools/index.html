@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Study Tool</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <audio id="buzzer" src="http://codingtutorials360.com/14244764.mp3"></audio>
+  </head>
+  <body>
+    <div class="center-both-rows">
+      <h1 align="center" class="bigtitle">Let's Study!</h1>
+        <div class="row">
+          <div class=".col-lg-6 text-center">
+            <!--Pomodoro Timer-->
+            <div class="text-center">
+              <h1>Pomodoro Timer</h1>
+              <div class="timediv">
+                <h1 id="title1">Session Time</h1>
+                <a href="#" class="btn btn-primary" id="minus5clock">-</a>
+                <h2 id="timeType"></h2>
+                <h2 id="num">25</h2>
+                <a href="#" class="btn btn-primary" id="add5clock">+</a>
+                <a href="#" class="btn btn-primary" id="reset">Reset</a>
+              </div>
+              <div id="breakdiv">
+                <h1 id="title2">Break Time</h1>
+                <a href="#" class="btn btn-primary" id="minus5break">-</a>
+                <h2 id="breaknum">5</h2>
+                <a href="#" class="btn btn-primary" id="add5break">+</a>
+              </div>
+              <div class="longbreakdiv">
+                 <h1 id="title3">Longbreak Time</h1>
+                 <a href="#" class="btn btn-primary" id="minus5longbreak">-</a>
+                 <h2 id="longbreaknum">25</h2>
+                 <a href="#" class="btn btn-primary" id="add5longbreak">+</a>
+              </div>
+                <a href="#" class="btn btn-primary" id="start">Start</a>
+            </div>
+          </div>
+          <!--To Do List-->
+          <div class=".col-lg-6 text-center">
+            <p>
+              <label for="new-task">Add Item</label><input id="new-task" type="text"><button>Add</button>
+            </p>
+            <h3>Todo</h3>
+            <ul id="incomplete-tasks">
+            </ul>
+            <h3>Completed</h3>
+            <ul id="completed-tasks">
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+
+/* align calculator to middle*/
+.align{
+  margin-left:40%;
+  margin-top:300px;
+  margin-bottom: 300px;
+}
+
+/*Styling for Calc Background*/
+
+.calculator{
+  height: 28.5em;
+  width: 20em;
+  background-color:orange;
+  text-align: center;
+  border:solid #808080;
+  border-radius:1%;
+}
+
+.header{
+  font-size: 250%;
+  font-weight: bold;
+  height: 1.5em;
+  background-color:#808080;
+  color: white;
+  margin-bottom: .5em;
+  padding-top: .25em;
+}
+
+#result_field{
+  background-color:white;
+  width:75%;
+  height:2.5em;
+  border:solid #878E88;
+  border-width:.5em;
+  margin-bottom: 1em;
+  text-align:right;
+  font-size:100%;
+  font-weight:bold;
+  color: #725752;
+}
+
+button{
+  height:4em;
+  width:4em;
+  margin-top:1em;
+  background-color:##D3D3D3;
+  border:solid #808080;
+  font-weight: bold;
+  color: #725752;
+}
