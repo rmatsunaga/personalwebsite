@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="pragma" content="no-cache" />
+    <title>Rey's Weather App</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+  <body>
+    <div class="titleClick">
+        <h1>How's the weather today? Scroll down to find out!</h1>
+        <input type="text" placeholder = "Search your city!" id = "citySearch">
+        <h3> <a href="#container"><button type="button" name="button">Scroll Down</button></a></h3>
+
+    </div>
+      <div id="container">
+        <div class="topArea" data-aos = "zoom-in">
+          <div class = "cityName">Tokyo</div>
+          <div class = "weatherType">Mostly Sunny</div>
+          <div class = "temp">84<sup>o</sup></div>
+        </div>
+        <div class="betweenSpace" ></div>
+        <div class="aboveLine clearfix" data-aos = "flip-left">
+          <div class = "date">Friday</div>
+          <div class="dailyTemp">
+            <div class="low">75</div>
+            <div class="high">88</div>
+          </div>
+        </div>
+        <hr>
+        <ul class = "extraInfo clearfix" data-aos="fade-right">
+          <li>Sunrise: 4:28 AM</li>
+          <li> Sunset: 7:00 PM</li>
+          <br>
+          <li>Chance of Rain: 0%</li>
+          <li>Humidity: 69%</li>
+          <br>
+          <li>Wind: s 19mph</li>
+          <li>Feels Like: 93<sup>o</sup> </li>
+          <br>
+          <li>Precipitation: 0.0 in</li>
+          <li>Pressure: 29.90 in</li>
+          <br>
+          <li>Visibility: 10.0 mi</li>
+          <li>UV Index: 7</li>
+          <br>
+        </ul>
+        <div class = "line clearfix"><div>
+      </div>
+      <script src="http://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"> </script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+      <script>
+      window.sr = ScrollReveal();
+      sr.reveal('.titleClick', {
+          duration: 2000,
+          origin: 'bottom'
+      });
+            $(function() {
+          // Smooth Scrolling
+          $('a[href*="#"]:not([href="#"])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+              var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+              if (target.length) {
+                $('html, body').animate({
+                  scrollTop: target.offset().top
+                }, 1500);
+                return false;
+              }
+            }
+          });
+        });
+      </script>
+      <script>
+        AOS.init();
+      </script>
+  </body>
+
+</html>
