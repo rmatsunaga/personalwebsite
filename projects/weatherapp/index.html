@@ -12,41 +12,38 @@
   </head>
   <body>
     <div class="titleClick">
-        <h1>How's the weather today? Scroll down to find out!</h1>
+        <h1>How's the weather today? Search your city to find out!</h1>
         <input type="text" placeholder = "Search your city!" id = "citySearch">
-        <h3> <a href="#container"><button type="button" name="button">Scroll Down</button></a></h3>
+        <h3> <a href="#container"><button id = "submitCity"type="button" name="button">Find Weather</button></a></h3>
 
     </div>
       <div id="container">
         <div class="topArea" data-aos = "zoom-in">
-          <div class = "cityName">Tokyo</div>
-          <div class = "weatherType">Mostly Sunny</div>
-          <div class = "temp">84<sup>o</sup></div>
+          <div class = "cityName"></div>
+          <div class = "weatherType"></div>
+          <div class = "temp"></div>
         </div>
         <div class="betweenSpace" ></div>
         <div class="aboveLine clearfix" data-aos = "flip-left">
-          <div class = "date">Friday</div>
+          <div class = "date"></div>
           <div class="dailyTemp">
-            <div class="low">75</div>
-            <div class="high">88</div>
+            <div class="low"></div>
+            <div class="high"></div>
           </div>
         </div>
         <hr>
         <ul class = "extraInfo clearfix" data-aos="fade-right">
-          <li>Sunrise: 4:28 AM</li>
-          <li> Sunset: 7:00 PM</li>
+          <li class = "sunrise"></li>
+          <li class = "sunset"></li>
           <br>
-          <li>Chance of Rain: 0%</li>
-          <li>Humidity: 69%</li>
+          <li class = "description"></li>
+          <li class = "humidity"></li>
           <br>
-          <li>Wind: s 19mph</li>
-          <li>Feels Like: 93<sup>o</sup> </li>
+          <li class = "windSpeed"></li>
+          <li class = "coordinates"></li>
           <br>
-          <li>Precipitation: 0.0 in</li>
-          <li>Pressure: 29.90 in</li>
-          <br>
-          <li>Visibility: 10.0 mi</li>
-          <li>UV Index: 7</li>
+          <li class = "visibility"></li>
+          <li class = "pressure"></li>
           <br>
         </ul>
         <div class = "line clearfix"><div>
@@ -81,6 +78,6 @@
       <script>
         AOS.init();
       </script>
+      <script type="text/javascript" src="js/main.js"></script>
   </body>
-
 </html>
